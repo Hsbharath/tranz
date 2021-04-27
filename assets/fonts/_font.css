@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('./Black/Lato-Black.woff2') format('woff2'),
+        url('./Black/Lato-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('./Bold/Lato-Bold.woff2') format('woff2'),
+        url('./Bold/Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato-BlackItalic';
+    src: url('./Black/Lato-BlackItalic.woff2') format('woff2'),
+        url('./Black/Lato-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato-Italic';
+    src: url('./Italic/Lato-Italic.woff2') format('woff2'),
+        url('./Italic/Lato-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato-LightItalic';
+    src: url('./Light/Lato-LightItalic.woff2') format('woff2'),
+        url('./Light/Lato-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('./Light/Lato-Light.woff2') format('woff2'),
+        url('./Light/Lato-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato-BoldItalic';
+    src: url('./Bold/Lato-BoldItalic.woff2') format('woff2'),
+        url('./Bold/Lato-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato-Hairline';
+    src: url('./Thin/Lato-Hairline.woff2') format('woff2'),
+        url('./Thin/Lato-Hairline.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato-HairlineItalic';
+    src: url('./Thin/Lato-HairlineItalic.woff2') format('woff2'),
+        url('./Thin/Lato-HairlineItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('./Regular/Lato-Regular.woff2') format('woff2'),
+        url('./Regular/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
