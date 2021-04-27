@@ -1,0 +1,561 @@
+.video-box {
+    position: relative;
+    background-color: #000;
+    height: 600px;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.video-box video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.orange-text{
+    color: #ff8102;
+}
+
+.blue-text{
+    color: #023172;
+}
+.overlay-orange{
+    position: absolute;
+    bottom: -15%;
+    left: 0%;
+    width: 200%;
+    height: 165px;
+    background: rgb(255 129 2 / 75%);
+    z-index: 2;
+    transform: translateX(-50%) translateY(-50%) skewX(36deg);
+}
+
+.overlay-orange::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: 0%;
+    width: 100%;
+    border-top: 25px solid #002f6e;
+}
+
+.overlay-blue{
+    position: absolute;
+    top: 75%;
+    right: 0%;
+    width: 600px;
+    height: 310px;
+    background: #fff;
+    z-index: 2;
+    transform: translateX(50%) translateY(-50%) skewX(-36deg);
+}
+
+.overlay-blue::before{
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: 0%;
+    width: calc(100% + 25px);
+    border-top: 25px solid #002f6e;
+}
+
+.overlay-blue::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -25px;
+    height: 50%;
+    border-left: 25px solid #002f6e;
+    border-top: 25px solid #002f6e;
+}
+
+.spirit-logo{
+    position: absolute;
+    top: 60%;
+    right: 2%;
+    z-index: 3;
+}
+
+.tranzonic-top-level{
+    height: 600px;
+}
+
+.tranzonic-logo{
+    margin-bottom: 300px;
+}
+
+.tranzonic-quote{
+    padding-left: 15px;
+    margin-top: -5px;
+    margin-left: -40px;
+    border-left: 2px solid #ffffff;
+    z-index: 4;
+}
+
+.tranzonic-quote h5{
+    font: normal normal normal 21px/26px 'Lato-Regular', sans-serif;
+}
+
+.slide-info{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.slide-info ul{
+    position: absolute;
+    top: 0px;
+    left: 75px;
+}
+
+.slide-info ul li{
+    width: 25px;
+    height: 25px;
+    background: #ffffff;
+    margin: 0 4px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 50%;
+}
+
+.slide-info p{
+    flex: 0 0 auto;
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 75px;
+}
+
+.slide-info p{
+  animation: slide-left;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0%;
+    opacity: 1;
+  }
+}
+
+.items {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.item {
+  position: relative;
+  grid-column: span 1;
+  padding: 2px;
+  box-shadow: 0px 0px 1px 2px #935507;
+}
+
+.item img:hover{
+    transform: scale(1.2);
+}
+
+.item p{
+    font: normal normal normal 21px/26px 'Lato-bold', sans-serif;
+}
+
+.content-box{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.content-header{
+    position: relative;
+    width: 480px;
+    height: 50px;
+    margin: 0 0 0 -30px;
+    background: #004c81;
+    transform: skewX(-45deg);
+    overflow: hidden;
+}
+
+.content-header .content-title{
+    position: absolute;
+    top: 13px;
+    left: 43px;
+    transform: skew(45deg);
+    color: #ffffff;
+}
+
+.hbg-logo{
+    max-width: 240px;
+}
+
+.hbg-website{
+    position: relative;
+    background: url('https://tranzonic.com/assets/header-images/headerimg1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hbg-website .hbg-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.logo-website{
+    position: absolute;
+    top: 460px;
+    right: 100px;
+    width: 400px;
+}
+
+.logo-website div{
+    text-align: center;
+}
+
+.stripe{
+    border-bottom: 4px solid #ff8102;
+}
+
+.logo-website-box1{
+    overflow: hidden;
+}
+
+.logo-website-box2{
+    position: relative;
+    width: 400px;
+    margin-left: -100px;
+    overflow: hidden;
+    transform: skew(-45deg);
+}
+
+.logo-website-box2 div{
+    position: relative;
+    left: 43px;
+    width: 103%;
+    transform: skew(45deg);
+    color: #ffffff;
+}
+
+.come-work{
+    position: relative;
+    background: url('../../../assets/career-banner-emerge_0.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.come-work .hbg-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.come-work-1{
+    position: relative;
+}
+
+.join-tranz{
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    width: 400px;
+}
+
+.join-tranz div{
+    text-align: left;
+}
+
+.join-tranz-box1{
+    overflow: hidden;
+}
+
+.join-tranz-box2{
+    position: relative;
+    width: 400px;
+    margin-left: -100px;
+    overflow: hidden;
+    transform: skew(-45deg);
+}
+
+.join-tranz-box2 div{
+    position: relative;
+    left: 43px;
+    width: 103%;
+    transform: skew(45deg);
+    color: #ffffff;
+}
+
+.locations{
+    position: relative;
+    height: 1000px;
+    background-image: url('https://tranzonic.com/tranzonicplant.09756d80d0bca387bda4.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.overlay-white{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(255,255,255,1),rgba(255,255,255,.9) 30%,rgba(255,255,255,.1) 60%,rgba(255,255,255,.1) 90%,rgba(255,255,255,0) 100%);
+}
+
+.icon-fa{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.bdr-left{
+    border-left: 2px solid #ffffff;
+}
+
+@media (min-width: 1600px){
+
+    .custom-container{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .tranzonic-logo img{
+        max-height: 160px;
+        margin-top: -20px;
+        z-index: 4;
+    }
+
+    .items {
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .slide-text{
+        font: normal normal bold 90px/90px 'Lato-BoldItalic', sans-serif;
+        z-index: 5;
+    }
+
+    .w-lg-25{
+        width: 25% !important;
+    }
+    
+}
+
+
+@media (min-width: 1200px) and (max-width: 1599.98px){
+
+    .custom-container{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .tranzonic-logo img{
+        max-height: 160px;
+        margin-top: -20px;
+        z-index: 4;
+    }
+
+    .items {
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .slide-text{
+        font: normal normal bold 90px/90px 'Lato-BoldItalic', sans-serif;
+        z-index: 5;
+    }
+
+    .w-lg-25{
+        width: 25% !important;
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+
+    .custom-container{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .tranzonic-logo img{
+        max-height: 160px;
+        margin-top: -20px;
+        z-index: 4;
+    }
+
+    .items {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .slide-text{
+        font: normal normal bold 90px/90px 'Lato-BoldItalic', sans-serif;
+        z-index: 5;
+    }
+
+    .w-md-50{
+        width: 50% !important;
+    }
+
+    .join-tranz{
+        top: 470px !important;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+
+    .custom-container{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .tranzonic-logo img{
+        max-height: 160px;
+        margin-top: -20px;
+        z-index: 4;
+    }
+
+    .items {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .slide-text{
+        font: normal normal bold 54px/90px 'Lato-BoldItalic', sans-serif;
+        z-index: 5;
+    }
+
+    .join-tranz{
+        top: 470px !important;
+    }
+    
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+
+    .custom-container{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .tranzonic-logo img{
+        max-height: 160px;
+        margin-top: -20px;
+        z-index: 4;
+    }
+
+    .items {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .slide-text{
+        font: normal normal bold 42px/90px 'Lato-BoldItalic', sans-serif;
+        color: #000000 !important;
+        z-index: 5;
+    }
+    
+}
+
+@media (min-width: 480px) and (max-width: 575.98px){
+
+    .custom-container{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .tranzonic-logo img{
+        max-height: 160px;
+        margin-top: -20px;
+        z-index: 4;
+    }
+
+    .items {
+        grid-gap: 3px;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .slide-text{
+        font: normal normal bold 32px/90px 'Lato-BoldItalic', sans-serif;
+        z-index: 5;
+    }
+
+    .tranzonic-quote, .slide-info{
+        display: none;
+    }
+
+    .join-tranz{
+        top: 90% !important;
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 479.98px){
+
+    .custom-container{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .tranzonic-logo img{
+        max-height: 160px;
+        margin-top: -20px;
+        z-index: 4;
+    }
+
+    .items {
+        grid-gap: 3px;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .tranzonic-quote, .slide-info{
+        display: none;
+    }
+
+    .join-tranz{
+        top: 90% !important;
+        margin-bottom: 25px;
+    }
+
+    .overlay-orange{
+        display: none;
+    }
+
+    .overlay-blue{
+        display: none;
+    }
+
+    .spirit-logo{
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 319.98px) {
+
+    body{
+        display: none !important;
+    }
+
+}
